@@ -97,7 +97,7 @@ const App: React.FC = () => {
 
       <About personalInfo={portfolioData.personalInfo} />
 
-      <Experience experience={portfolioData.experience} />
+      <Experience experiences={portfolioData.experiences} />
 
       <Projects
         awsProjects={portfolioData.awsProjects}

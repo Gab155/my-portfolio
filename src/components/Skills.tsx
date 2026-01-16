@@ -269,28 +269,6 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
             </div>
           </div>
         </div>
-
-        {/* Summary Stats */}
-        <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-gray-200">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            <div className="text-center">
-              <div className="text-lg md:text-2xl font-bold text-gray-900">50+</div>
-              <p className="text-xs md:text-sm text-gray-600">Technologies</p>
-            </div>
-            <div className="text-center">
-              <div className="text-lg md:text-2xl font-bold text-gray-900">10+</div>
-              <p className="text-xs md:text-sm text-gray-600">Years Experience</p>
-            </div>
-            <div className="text-center">
-              <div className="text-lg md:text-2xl font-bold text-gray-900">100+</div>
-              <p className="text-xs md:text-sm text-gray-600">Projects</p>
-            </div>
-            <div className="text-center">
-              <div className="text-lg md:text-2xl font-bold text-gray-900">15+</div>
-              <p className="text-xs md:text-sm text-gray-600">Certifications</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

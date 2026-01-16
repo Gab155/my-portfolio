@@ -67,18 +67,20 @@ const Education: React.FC<EducationProps> = ({ references }) => {
                 </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold text-gray-900">Colegio de Montalban</h3>
+                    <h3 className="text-xl font-bold text-gray-900">ST.Vincent College of Cabuyao</h3>
                     <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">
                       2015 - 2019
                     </span>
                   </div>
-                  <p className="text-gray-700 mb-3">Senior High School Graduate</p>
+                  <p className="text-gray-700 mb-3">College Graduate</p>
                   <div className="flex items-center gap-2 text-gray-600">
                     <MapPin className="w-4 h-4" />
-                    <span>Kasiglahan Village, Rodriguez, Rizal</span>
+                    <span>Mamatid, Cabuyao, Laguna</span>
                   </div>
                 </div>
               </div>
+
+              
 
               {/* Skills Gained */}
               <div className="pt-6 border-t border-gray-100">
@@ -93,41 +95,6 @@ const Education: React.FC<EducationProps> = ({ references }) => {
                       <span className="text-gray-700 text-sm">{skill}</span>
                     </div>
                   ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Timeline */}
-            <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-              <h3 className="text-lg font-bold text-gray-900 mb-6">Learning Journey</h3>
-              <div className="space-y-4">
-                <div className="flex items-center justify-between border-l-4 border-blue-500 pl-4">
-                  <div>
-                    <div className="font-semibold">Graduation</div>
-                    <div className="text-sm text-gray-600">Completed Senior High School</div>
-                  </div>
-                  <div className="text-gray-500">2019</div>
-                </div>
-                <div className="flex items-center justify-between border-l-4 border-purple-500 pl-4">
-                  <div>
-                    <div className="font-semibold">IT Fundamentals</div>
-                    <div className="text-sm text-gray-600">Started learning programming</div>
-                  </div>
-                  <div className="text-gray-500">2020</div>
-                </div>
-                <div className="flex items-center justify-between border-l-4 border-green-500 pl-4">
-                  <div>
-                    <div className="font-semibold">Professional Career</div>
-                    <div className="text-sm text-gray-600">Started at Cellair Manufacturing</div>
-                  </div>
-                  <div className="text-gray-500">2021</div>
-                </div>
-                <div className="flex items-center justify-between border-l-4 border-orange-500 pl-4">
-                  <div>
-                    <div className="font-semibold">Certification</div>
-                    <div className="text-sm text-gray-600">ISTQB Foundations</div>
-                  </div>
-                  <div className="text-gray-500">2023</div>
                 </div>
               </div>
             </div>
@@ -171,26 +138,6 @@ const Education: React.FC<EducationProps> = ({ references }) => {
                     </div>
                   ))}
                 </div>
-              </div>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-blue-50 rounded-lg p-4">
-                <div className="text-2xl font-bold text-gray-900">4+</div>
-                <div className="text-sm text-gray-700">Years Learning</div>
-              </div>
-              <div className="bg-purple-50 rounded-lg p-4">
-                <div className="text-2xl font-bold text-gray-900">100%</div>
-                <div className="text-sm text-gray-700">Certification Score</div>
-              </div>
-              <div className="bg-green-50 rounded-lg p-4">
-                <div className="text-2xl font-bold text-gray-900">8</div>
-                <div className="text-sm text-gray-700">Topics Mastered</div>
-              </div>
-              <div className="bg-yellow-50 rounded-lg p-4">
-                <div className="text-2xl font-bold text-gray-900">24/7</div>
-                <div className="text-sm text-gray-700">Continuous Learning</div>
               </div>
             </div>
           </div>

@@ -2,13 +2,15 @@
 // Lahat ng TypeScript types at interfaces - UPDATED
 
 export interface Experience {
+  id: string;
   title: string;
   company: string;
   period: string;
   location: string;
   responsibilities: string[];
-  icon?: string;
-  technologies?: string[]; // New field for technologies used
+  icon: string;
+  technologies: string[];
+  type: 'internship' | 'full-time' | 'contract';
 }
 
 export interface Project {
@@ -73,11 +75,11 @@ export interface Education {
 
 export interface PortfolioData {
   personalInfo: PersonalInfo;
-  experience: Experience;
+  education: Education;
+  experiences: Experience[]; // Change from 'ExperienceItem' to 'Experience'
   awsProjects: Project[];
   internalProjects: Project[];
-  systemProjects?: Project[];
+  systemProjects: Project[];
   skills: Skill[];
   references: Reference[];
-  education?: Education; // New field
 }

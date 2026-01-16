@@ -56,7 +56,6 @@ const About: React.FC<AboutProps> = ({ personalInfo }) => {
     { id: 'overview', label: 'Overview', icon: <Brain className="w-4 h-4" /> },
     { id: 'mission', label: 'Mission', icon: <Target className="w-4 h-4" /> },
     { id: 'values', label: 'Values', icon: <Award className="w-4 h-4" /> },
-    { id: 'approach', label: 'Approach', icon: <Zap className="w-4 h-4" /> },
   ];
 
   const values = [
@@ -102,7 +101,7 @@ const About: React.FC<AboutProps> = ({ personalInfo }) => {
           {/* Left Column - Stats & Overview */}
           <div className="lg:w-2/3 space-y-10">
             {/* Enhanced Stats Cards */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {stats.map((stat, index) => (
                 <div
                   key={index}
@@ -129,7 +128,7 @@ const About: React.FC<AboutProps> = ({ personalInfo }) => {
                   <div className="text-xs text-gray-400 mt-2">Click for details →</div>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             {/* Enhanced Tabs */}
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">

@@ -509,12 +509,45 @@ const Projects: React.FC<ProjectsProps> = ({
             Project Portfolio
           </h2>
           <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto px-4">
-            AWS Infrastructure & Internal Systems showcasing technical expertise
+            Project Systems & AWS Infrastructure showcasing technical expertise
           </p>
         </div>
 
-        {/* AWS Projects Section */}
+        {/* INTERNAL PROJECTS SECTION - NILAGAY SA TAAS */}
         <div className="mb-8 md:mb-12">
+          <div className="flex items-center gap-3 mb-4 md:mb-6">
+            <div className="p-1.5 md:p-2 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg text-white">
+              <Code size={16} className="md:w-5 md:h-5" />
+            </div>
+            <div>
+              <h3 className="text-lg md:text-xl font-bold text-gray-900">
+                Project Systems
+              </h3>
+              <p className="text-xs md:text-sm text-gray-500">
+                Custom business solutions
+              </p>
+            </div>
+          </div>
+          
+          <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
+            {internalProjects.map((project, index) => (
+              <div 
+                key={index}
+                style={{
+                  animation: `fadeInUp 0.5s ease-out ${index * 0.1}s both`
+                }}
+              >
+                <ProjectCard
+                  project={project}
+                  onClick={() => openModal(project)}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* AWS PROJECTS SECTION - NILAGAY SA BABA */}
+        <div>
           <div className="flex items-center gap-3 mb-4 md:mb-6">
             <div className="p-1.5 md:p-2 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg text-white">
               <Cloud size={16} className="md:w-5 md:h-5" />
@@ -531,39 +564,6 @@ const Projects: React.FC<ProjectsProps> = ({
           
           <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
             {awsProjects.map((project, index) => (
-              <div 
-                key={index}
-                style={{
-                  animation: `fadeInUp 0.5s ease-out ${index * 0.1}s both`
-                }}
-              >
-                <ProjectCard
-                  project={project}
-                  onClick={() => openModal(project)}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Internal Projects Section */}
-        <div>
-          <div className="flex items-center gap-3 mb-4 md:mb-6">
-            <div className="p-1.5 md:p-2 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg text-white">
-              <Code size={16} className="md:w-5 md:h-5" />
-            </div>
-            <div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900">
-                Internal Systems
-              </h3>
-              <p className="text-xs md:text-sm text-gray-500">
-                Custom business solutions
-              </p>
-            </div>
-          </div>
-          
-          <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-            {internalProjects.map((project, index) => (
               <div 
                 key={index}
                 style={{
